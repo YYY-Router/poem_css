@@ -1,0 +1,45 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b2bec3;
+    overflow: hidden;
+}
+
+.bigBac {
+    width: 1000px;
+    height: 500px;
+    background-color: #dfe6e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    backdrop-filter: blur(50px);
+    opacity: 0.8;
+    box-shadow: 0 5px 15px rgba(20, 20, 20, 0.8);
+    /* filter: drop-shadow(10px 10px  #b2bec3); */
+}
+
+.poem {
+    color: #333;
+    font-size: 1.4em;
+    /* 书写方向属性 */
+    writing-mode: vertical-rl;
+    float: right;
+    user-select: none;
+}
+
+.author {
+    color: #aaa;
+    font-size: 0.8em;
+    text-align: end;
+}
+
+.author .year {
+    /* 单个文本朝向属性 */
+    text-orientation: upright;
+    /* 文字在正常朝下，要不要横向组合起来 */
+    text-combine-upright: all;
+}
